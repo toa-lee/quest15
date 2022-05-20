@@ -14,7 +14,7 @@
     "lib"
   ],
   "scripts": {
-    "ecs": "lib/static.js &"
+    "ecs": "../../node_modules/.bin/forever start lib/static.js"
   },
   "dependencies": {
     "eslint": "^8.15.0",

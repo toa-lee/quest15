@@ -14,7 +14,7 @@
     "lib"
   ],
   "scripts": {
-    "ecs": "lib/ecs.js &"
+    "ecs": "../../node_modules/.bin/forever start lib/ecs.js"
   },
   "dependencies": {
     "cors": "^2.8.5",

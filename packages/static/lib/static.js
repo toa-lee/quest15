@@ -1,4 +1,6 @@
-const express = require("express");
+#!/usr/bin/env node
+
+const express = require('express')
 const app = express();
 const PORT = 8080;
 

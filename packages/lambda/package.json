@@ -14,7 +14,7 @@
     "lib"
   ],
   "scripts": {
-    "ecs": "lib/lambda.js &"
+    "ecs": "../../node_modules/.bin/forever start lib/lambda.js"
   },
   "dependencies": {
     "eslint": "^8.15.0",
