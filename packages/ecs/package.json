@@ -14,7 +14,7 @@
     "lib"
   ],
   "scripts": {
-    "ecs": "forever start lib/ecs.js"
+    "ecs": "lib/ecs.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
