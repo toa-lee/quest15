@@ -9,14 +9,12 @@
       "hostPort": 9050,
       "protocol": "tcp"
     }],
+    "environment": [{
+      "name": "PORT",
+      "value": "9050"
+    }],
     "essential": true
   }],
-  "environment": [
-   {
-    "name": "PORT",
-    "value": "9050"
-   }
-  ],
   "requiresCompatibilities": [
     "FARGATE"
   ],
