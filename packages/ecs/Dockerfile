@@ -12,4 +12,4 @@ COPY server.js .
 
 EXPOSE 9050
 
-CMD ["node", "start.js"]
+CMD ["node", "ecs.js"]
