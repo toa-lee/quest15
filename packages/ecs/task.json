@@ -10,6 +10,7 @@
       "awslogs-region": "ap-northeast-2",
       "awslogs-stream-prefix": "staging-service"
     }
+  },
     "name": "service",
     "image": "mike103/node-web-app-v2:latest",
     "portMappings": [{
