@@ -11,6 +11,12 @@
     }],
     "essential": true
   }],
+  "environment": [
+   {
+    "name": "PORT",
+    "value": "9050"
+   }
+  ],
   "requiresCompatibilities": [
     "FARGATE"
   ],
