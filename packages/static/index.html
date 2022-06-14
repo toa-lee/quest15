@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <body>
+    <button onclick="getUser()">ECS API</button>
+    <button onclick="getUser2()">LAMBDA API</button>
+    <div id="userInfo"></div>
+    <div id="userInfo2"></div>
+    <script>
+      function getUser() {
+        
+        const config = {
+          method: "get"
+        };
+        
+        fetch("http://3.38.188.91:9060", config)
+          .then(response => response.json())
+          .then(data => {
+          const message = document.createElement("div");
+          message.textContent = data.message;
+          const userInfo = document.getElementById("userInfo");
+          userInfo.appendChild(message);
+      })
+      .catch(error => console.log("fetch 에러!"));
+      }
+      
+      function getUser2() {
+        
+        const config = {
+          method: "get"
+        };
+        
+        fetch("http://3.38.188.91:9070", config)
+          .then(response => response.json())
+          .then(data => {
+          const message = document.createElement("div");
+          message.textContent = data.message;
+          const userInfo = document.getElementById("userInfo2");
+          userInfo.appendChild(message);
+      })
+      .catch(error => console.log("fetch 에러!"));
+      }
+    </script>
+  </body>
+</html>

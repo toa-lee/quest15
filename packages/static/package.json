@@ -14,7 +14,7 @@
     "lib"
   ],
   "scripts": {
-    "ecs": "../../node_modules/.bin/forever start lib/static.js"
+    "deploy": "bash deploy.sh"
   },
   "dependencies": {
     "eslint": "^8.15.0",
