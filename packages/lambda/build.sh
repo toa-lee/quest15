@@ -1,1 +1,1 @@
-zip lambda.zip lib/lambda.js
+zip index.zip lambda.js
