@@ -1,5 +1,5 @@
 {
-  "family": "http-ecs-service",
+  "family": "service-staging",
   "networkMode": "awsvpc",
   "containerDefinitions": [{
     "name": "http-server",
