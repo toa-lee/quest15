@@ -6,9 +6,9 @@ COPY package*.json ./
 
 RUN npm install express cors
 
-COPY lib/start.js .
+COPY ecs.js .
 
-COPY lib/server.js .
+COPY server.js .
 
 EXPOSE 9050
 
