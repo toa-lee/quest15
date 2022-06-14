@@ -2,11 +2,11 @@
   "family": "service-staging",
   "networkMode": "awsvpc",
   "containerDefinitions": [{
-    "name": "http-server",
+    "name": "staging",
     "image": "mike103/node-web-app-v2:latest",
     "portMappings": [{
-      "containerPort": 9070,
-      "hostPort": 9070,
+      "containerPort": 9050,
+      "hostPort": 9050,
       "protocol": "tcp"
     }],
     "essential": true
