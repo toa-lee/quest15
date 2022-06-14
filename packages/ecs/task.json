@@ -1,7 +1,15 @@
 {
   "family": "service-staging",
+  "executionRoleArn": "arn:aws:iam::543129360050:role/ecs-staging-execution-role",
   "networkMode": "awsvpc",
   "containerDefinitions": [{
+  "logConfiguration": {
+    "logDriver": "awslogs",
+    "options": {
+      "awslogs-group": "awslogs-service-staging",
+      "awslogs-region": "ap-northeast-2",
+      "awslogs-stream-prefix": "staging-service"
+    }
     "name": "service",
     "image": "mike103/node-web-app-v2:latest",
     "portMappings": [{
