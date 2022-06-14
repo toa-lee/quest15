@@ -1,0 +1,19 @@
+{
+  "family": "http-ecs-service",
+  "networkMode": "awsvpc",
+  "containerDefinitions": [{
+    "name": "http-server",
+    "image": "mike103/node-web-app-v2:latest",
+    "portMappings": [{
+      "containerPort": 9070,
+      "hostPort": 9070,
+      "protocol": "tcp"
+    }],
+    "essential": true
+  }],
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "cpu": "256",
+  "memory": "512"
+}

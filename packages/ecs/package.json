@@ -14,7 +14,8 @@
     "lib"
   ],
   "scripts": {
-    "ecs": "../../node_modules/.bin/forever start lib/ecs.js"
+    "build": "bash build.sh",
+    "deploy": "bash deploy.sh"
   },
   "dependencies": {
     "cors": "^2.8.5",
