@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const app = require('./server.js');
-const port = 9070;
+const port = 9050;
 const cors = require('cors');
 
 app.use(cors());
